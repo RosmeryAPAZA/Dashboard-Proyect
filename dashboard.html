@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-8 barra">
+                <h4 class="text-light">SISTEMA DE VENTAS</h4>
+            </div>
+            <div class="col-4 text-right barra">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a href="#" class="px-3 text-light perfil dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle user"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+                            <a class="dropdown-item menuperfil cerrar" href="#">
+                                <i class="fas fa-sign-out-alt m-1"></i>Salir
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="barra-lateral col-12 col-sm-auto ">
+<!-- NAV -->
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+        <!-- PRINCIPAL -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-home"></i><span>Principal</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="dashboard.html">
+                              <span>dashboard</span>
+                          </a>
+                        </div>
+                      </li>
+        <!-- PRODUCTOS -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-cart-arrow-down"></i><span>Productos</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="formulario.html">
+                              <span>Formulario</span>
+                          </a>
+                          <a class="dropdown-item" href="Listado.html">
+                            <span>Listado</span>
+                          </a>
+                        </div>
+                      </li>
+        <!-- CATEGORIAS -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-book-reader"></i><span>Categorias</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="formulario.html">
+                                <span>Formulario</span>
+                            </a>
+                            <a class="dropdown-item" href="Listado.html">
+                              <span>Listado</span>
+                            </a>
+                        </div>
+                      </li>
+        <!-- CLIENTES -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-people-group"></i><span>Clientes</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="formulario.html">
+                                <span>Formulario</span>
+                            </a>
+                            <a class="dropdown-item" href="Listado.html">
+                              <span>Listado</span>
+                            </a>
+                        </div>
+                      </li>
+        <!-- EMPRESAS -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-building"></i><span>Empresas</span>
+                        </a>
+                      </li>
+        <!-- DOCENTES -->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-chalkboard-user"></i><span>Docentes</span>
+                        </a>
+                      </li>
+
+                      
+                </nav>
+            </div>
+<!-- MAIN -->
+            <main class="main col ">
+                <!-- <div class="row justify-content-center align-content-center text-center m-3">
+                    <div class="w-100">
+                        <nav class="navbar navbar-light bg-light">
+                            <div class="container-fluid">
+                              <a class="navbar-brand">Dashboard</a>
+                              <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+                            </div>
+                          </nav>
+                    </div>
+                </div> -->
+                <section>
+                    <div class="container mt-0">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <div class="card text-white bg-primary text-center " style="max-width: 18rem;">
+                                            <div class="card-header font-weight-bold mb-0">EARNINGS (MONTHLY)</div>
+                                            <div class="card-body">
+                                                <h3 class="font-weight-bold">$40,000</h3>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-dark bg-light text-center" style="max-width: 18rem;">
+                                            <div class="card-header font-weight-bold mb-0">EARNINGS (ANNUAL)</div>
+                                            <div class="card-body">
+                                                <h3 class="font-weight-bold">$17421,97</h3>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-white bg-primary text-center" style="max-width: 18rem;">
+                                            <div class="card-header font-weight-bold mb-0">TASKS</div>
+                                            <div class="card-body">
+                                                <h3 class="font-weight-bold">100%</h3>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-dark bg-light text-center " style="max-width: 18rem;">
+                                            <div class="card-header font-weight-bold mb-0">PENDING REQUESTS</div>
+                                            <div class="card-body">
+                                                <h3 class="font-weight-bold">1834354</h3>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 my-3">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="font-weight-bold mb-0">Numero de Ventas</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="myChart" width="300" height="150"></canvas>                                                                                   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-header">
+                                    <h6 class="font-weight-bold mb-0 text-center py-3">Clientes</h6>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart2" width="50" height="20"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b20216a971.js" crossorigin="anonymous"></script>
+
+        <script>
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart=new Chart(ctx,{
+            type:"bar",
+            data:{
+                labels:['col1','col2','col3','col4','col5'],
+                datasets:[{
+                    labels: 'Num datos',
+                    data:[2,5,8,10,12],
+                    backgroundColor:[
+                        'rgb(255, 216, 0)',
+                        'rgb(100, 255, 0)',
+                        'rgb(85, 183, 243)',
+                        'rgb(176, 138, 239)',
+                        'rgb(238, 133, 170)',
+
+                    ]
+                }]
+            },
+            options:{
+                scales:{
+                    yAxes:[{
+                        ticks:{
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        }
+        );
+    </script>
+    <script>
+        var ctx = document.getElementById("myChart2").getContext("2d");
+        var myChart=new Chart(ctx,{
+            type:"pie",
+            data:{
+                labels:['col1','col2','col3','col4','col5'],
+                datasets:[{
+                    labels: 'Num datos',
+                    data:[2,5,8,10,12],
+                    backgroundColor:[
+                        'rgb(255, 216, 0)',
+                        'rgb(100, 255, 0)',
+                        'rgb(85, 183, 243)',
+                        'rgb(176, 138, 239)',
+                        'rgb(238, 133, 170)',
+
+                    ]
+                }]
+            },
+            options:{
+                scales:{
+                    yAxes:[{
+                        ticks:{
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        }
+        );
+    </script>
+</body>
+
+</html>
